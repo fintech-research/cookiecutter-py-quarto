@@ -1,0 +1,44 @@
+---
+title: "{{cookiecutter.project_name}}"
+subtitle: "Preliminary draft - Please do not circulate"
+date: today
+date-format: long
+format:
+  html:
+    output-file: {{cookiecutter.project_slug}}.html
+  pdf:
+    output-file: {{cookiecutter.project_slug}}.pdf
+authors:
+  - name: {{cookiecutter.author}}
+    affil-id: 1
+    affiliation:
+      - ref: 1
+affiliations:
+  - id: 1
+    name: {{cookiecutter.affiliation} 
+abstract: ""
+keywords:
+  - keyword 1
+  - keyword 2 
+thanks: "We thank ... ~~ {{cookiecutter.author}}: {{cookiecutter.affiliation}} ({{cookiecutter.email}})."
+---
+
+{{< include _introduction.qmd >}}
+
+{{< include _data.qmd >}}
+
+{{< include _conclusion.qmd >}}
+
+
+\newpage
+\clearpage
+
+## References {.unnumbered}
+
+\begingroup
+\raggedright
+::: {#refs}
+:::
+\endgroup
+
+

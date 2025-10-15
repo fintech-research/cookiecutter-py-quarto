@@ -6,6 +6,8 @@
 [![License](https://img.shields.io/github/license/fintech-research/cookiecutter-py-quarto)](https://img.shields.io/github/license/fintech-research/cookiecutter-py-quarto)
 [![style](https://img.shields.io/badge/style-ruff-ff69b4?labelColor=grey&color=ff69b4)](https://github.com/astral-sh/ruff)
 
+**WARNING**: This template is under active development and is not quite ready for use yet. Use it at your own risk.
+
 This is a modern Cookiecutter template that can be used to initiate a research project that uses Python and Quarto.
 
 Cookiecutter template for research projects that use Python and Quarto. This template is _very_ opinionated, and is meant to be a good starting point for empirical research projects in Python with companion papers and presentations written in Quarto. It tailored for our research group's workflow; feel free to use it as is, or fork it and adapt it to your own needs.
