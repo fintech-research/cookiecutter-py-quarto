@@ -1,0 +1,38 @@
+set shell := ["zsh", "-lc"]
+set default := "help"
+
+# Install the virtual environment and install the pre-commit hooks
+install:
+    echo "🚀 Creating virtual environment using uv"
+    uv sync
+    uv run pre-commit install
+
+# Run code quality tools.
+check:
+    echo "🚀 Checking lock file consistency with 'pyproject.toml'"
+    uv lock --locked
+    echo "🚀 Linting code: Running pre-commit"
+    uv run pre-commit run -a
+    echo "🚀 Static type checking: Running ty"
+    uv run ty check
+    echo "🚀 Checking for obsolete dependencies: Running deptry"
+    uv run deptry src
+
+# Test the code with pytest
+test:
+    echo "🚀 Testing code: Running pytest"
+    uv run python -m pytest --cov --cov-config=pyproject.toml --cov-report=xml
+
+# Test if documentation can be built without warnings or errors
+docs-test:
+    echo "🚀 Testing docs build"
+    uv run mkdocs build -s
+
+# Build and serve the documentation
+docs:
+    echo "🚀 Building and serving the documentation"
+    uv run mkdocs serve
+
+# Show available recipes and their short descriptions
+help:
+    just --summary
