@@ -2,6 +2,7 @@
   "author": "Vincent Grégoire",
   "email": "vincent.gregoire@gmail.com",
   "author_github_handle": "vgreg",
+  "affiliation": "HEC Montréal",
   "project_name": "example-project",
   "project_slug": "{{cookiecutter.project_name|lower|replace('-', '_')}}",
   "project_description": "This is a template repository for research projects that use Python and Quarto.",
