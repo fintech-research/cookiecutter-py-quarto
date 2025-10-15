@@ -15,7 +15,7 @@ authors:
       - ref: 1
 affiliations:
   - id: 1
-    name: {{cookiecutter.affiliation} 
+    name: {{cookiecutter.affiliation}}
 abstract: ""
 keywords:
   - keyword 1
@@ -23,12 +23,12 @@ keywords:
 thanks: "We thank ... ~~ {{cookiecutter.author}}: {{cookiecutter.affiliation}} ({{cookiecutter.email}})."
 ---
 
+{% raw %}
 {{< include _introduction.qmd >}}
 
 {{< include _data.qmd >}}
 
 {{< include _conclusion.qmd >}}
-
 
 \newpage
 \clearpage
@@ -42,3 +42,4 @@ thanks: "We thank ... ~~ {{cookiecutter.author}}: {{cookiecutter.affiliation}} (
 \endgroup
 
 
+{% endraw %}

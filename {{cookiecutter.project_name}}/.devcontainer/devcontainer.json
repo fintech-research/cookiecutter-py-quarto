@@ -1,13 +1,23 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
+//
+// If using podman, uncomment the part under "runArgs"
+// 
+// If you need to mount a directory (e.g., a shared Dropbox data directory) then each
+// user will need a custom devcontainer.json file. It is recommended then to create a
+// file called devcontainer-sample.json to commit to the git repo, and to add
+// devcontainer.json to .gitignore. Then uncomment the part under "mounts" to map the
+// directory, where source is the path on the host (the physical computer) and target
+// is the path inside the container, which should be the same for all users.
 {
     "name": "{{cookiecutter.project_name}}",
     // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
     "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
-    "runArgs": [
-        // avoid UID/GID remapping under rootless Podman
-        "--userns=keep-id"
-    ],
+    // "runArgs": [
+    //     // avoid UID/GID remapping under rootless Podman
+    //     "--userns=keep-id"
+    // ],
+    // "mounts": ["source=/path/to/local/directory,target=/mnt/data,type=bind,consistency=cached"],
     "features": {
         "ghcr.io/schlich/devcontainer-features/just:0": {},
         "ghcr.io/devcontainers/features/github-cli:1": {},

@@ -16,11 +16,7 @@ plugins:
       handlers:
         python:
           paths: [
-            {%- if cookiecutter.layout == "src" -%}
             "src/{{cookiecutter.project_slug}}"
-            {%- else -%}
-            "{{cookiecutter.project_slug}}"
-            {%- endif -%}
             ]
 theme:
   name: material
