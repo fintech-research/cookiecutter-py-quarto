@@ -15,7 +15,7 @@ authors:
       - ref: 1
 affiliations:
   - id: 1
-    name: {{cookiecutter.affiliation} 
+    name: {{cookiecutter.affiliation}}
 abstract: ""
 keywords:
   - keyword 1
