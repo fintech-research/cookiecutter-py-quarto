@@ -23,12 +23,13 @@ keywords:
 thanks: "We thank ... ~~ {{cookiecutter.author}}: {{cookiecutter.affiliation}} ({{cookiecutter.email}})."
 ---
 
+{% raw %}
 {{< include _introduction.qmd >}}
 
 {{< include _data.qmd >}}
 
 {{< include _conclusion.qmd >}}
-
+{% endraw %}
 
 \newpage
 \clearpage

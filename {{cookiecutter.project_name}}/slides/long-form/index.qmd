@@ -9,11 +9,11 @@ title-slide-attributes:
   data-background-position: 97% 91%
 ---
    
-
+{% raw %}
 {{< include _introduction.qmd >}}
 
 {{< include _conclusion.qmd >}} 
-
+{% endraw %}
 
 ## Thank you!
 
