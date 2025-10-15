@@ -29,7 +29,6 @@ thanks: "We thank ... ~~ {{cookiecutter.author}}: {{cookiecutter.affiliation}} (
 {{< include _data.qmd >}}
 
 {{< include _conclusion.qmd >}}
-{% endraw %}
 
 \newpage
 \clearpage
@@ -43,3 +42,4 @@ thanks: "We thank ... ~~ {{cookiecutter.author}}: {{cookiecutter.affiliation}} (
 \endgroup
 
 
+{% endraw %}
