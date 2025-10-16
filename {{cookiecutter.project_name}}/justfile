@@ -15,6 +15,7 @@ install:
     echo "🚀 Installing git pre-commit hooks"
     uv run pre-commit install
 
+{% raw %}
 # Initialize the data directory structure
 init-data-dir:
     echo "🚀 Initializing data directory in {{data_dir}}"
@@ -31,6 +32,7 @@ init-results-dir:
     mkdir -p {{results_dir}}/figures
     mkdir -p {{results_dir}}/tables
     mkdir -p {{results_dir}}/text
+{% endraw %}
 
 # Initialize both data and results directory structures
 init-dirs: init-data-dir init-results-dir
