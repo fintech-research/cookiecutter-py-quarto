@@ -19,6 +19,7 @@
     "Not open source"
   ],
   "_copy_without_render": [
-    "*.bst"
+    "*.bst",
+    "title.tex"
   ]
 }
