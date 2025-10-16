@@ -16,7 +16,7 @@ authors:
 affiliations:
   - id: 1
     name: {{cookiecutter.affiliation}}
-abstract: ""
+abstract: "This paper..."
 keywords:
   - keyword 1
   - keyword 2 

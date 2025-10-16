@@ -27,7 +27,7 @@ format:
     monofont: "FiraCode Nerd Font Mono"
     monofontoptions: "Scale=0.7"
     cite-method: natbib
-    biblio-style: jf
+    biblio-style: econometrica
     template-partials:
       - title.tex
     include-in-header:
