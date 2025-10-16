@@ -92,18 +92,11 @@ repository, which in turn is partially based on [Audrey Feldroy's](https://githu
 ├── .claude/
 ├── .devcontainer/
 ├── .env-example
+├── .github/
 ├── .gitignore
 ├── .python-version
 ├── config
 │   └── config.yaml
-├── data
-│   ├── clean/
-│   ├── preprocessing-cache/
-│   ├── raw
-│   │   ├── download-cache/
-│   │   ├── open/
-│   │   └── restricted/
-│   └── results/
 ├── docs/
 ├── justfile
 ├── LICENSE
@@ -112,12 +105,8 @@ repository, which in turn is partially based on [Audrey Feldroy's](https://githu
 ├── notes/
 ├── paper/
 ├── pyproject.toml
-├── outputs/
+├── outputs/ *
 ├── README.md
-├── results/
-│   ├── figures/
-│   ├── tables/
-│   └── text/
 ├── slides/
 ├── src
 │   └── {{ cookiecutter.project_slug }}
@@ -132,3 +121,37 @@ repository, which in turn is partially based on [Audrey Feldroy's](https://githu
 │   └── __init__.py
 └── uv.lock
 ```
+
+- The `outputs/` directory is created when running the pipeline for the first time.
+
+### Data
+
+The data directory (defined in the `DATA_DIR` environment variable, default `data/`) is structured as follows:
+
+```
+.
+├── data
+│   ├── clean/
+│   ├── preprocessing-cache/
+│   ├── raw
+│   │   ├── download-cache/
+│   │   ├── open/
+│   │   └── restricted/
+│   └── results/
+```
+
+### Results
+
+The results directory (defined in the `RESULTS_DIR` environment variable, default `results/`) is structured as follows:
+
+```
+.
+├── results/
+│   ├── figures/
+│   ├── tables/
+│   └── text/
+```
+
+### Resources
+
+There is also a resources directory (defined in the `RESOURCES_DIR` environment variable, default `resources/`) that can be used to store shared resources, such as fonts. We do not have a specific structure for this directory, as it will depend on the project.
