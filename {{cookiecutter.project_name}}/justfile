@@ -1,10 +1,10 @@
-set shell := ["zsh", "-lc"]
-set default := "help"
-
 # Install the virtual environment and install the pre-commit hooks
 install:
     echo "🚀 Creating virtual environment using uv"
     uv sync
+    echo "🚀 Initializing git repo if it does not exist"
+    [ -d .git ] || git init -b main
+    echo "🚀 Installing git pre-commit hooks"
     uv run pre-commit install
 
 # Run code quality tools.
@@ -32,6 +32,22 @@ docs-test:
 docs:
     echo "🚀 Building and serving the documentation"
     uv run mkdocs serve
+
+# Build the paper (touch index.qmd to ensure code is re-run)
+render-paper:
+    echo "🚀 Building paper"
+    touch paper/index.qmd
+    uv run quarto render paper
+
+render-slides:
+    echo "🚀 Building long-form slides"
+    touch slides/long-form/index.qmd
+    uv run quarto render slides/long-form
+
+preview-slides:
+    echo "🚀 Previewing long-form slides"
+    touch slides/long-form/index.qmd
+    uv run quarto preview slides/long-form
 
 # Show available recipes and their short descriptions
 help:
