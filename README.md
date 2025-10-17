@@ -19,7 +19,7 @@ Python project with all the necessary tools for development, testing, and deploy
 - python-dotenv for environment variable management
 - [just](https://github.com/casey/just) task runner
 - Pre-commit hooks with [pre-commit](https://pre-commit.com/)
-- Code quality with [ruff](https://github.com/astral-sh/ruff), [ty](https://docs.astral.sh/ty/) and [deptry](https://github.com/fpgmaas/deptry/).
+- Code quality with [ruff](https://github.com/astral-sh/ruff) and [ty](https://docs.astral.sh/ty/)
 - Testing and coverage with [pytest](https://docs.pytest.org/en/7.1.x/) and [pytest-cov](https://github.com/pytest-dev/pytest-cov)
 - Documentation with [MkDocs](https://www.mkdocs.org/)
 - Containerization with [Docker](https://www.docker.com/) or [Podman](https://podman.io/)
@@ -52,6 +52,7 @@ Features in `cookiecutter-uv` that are not in `cookiecutter-py-quarto`:
 - Publishing to [PyPI](https://pypi.org) by creating a new release on GitHub. _cookiecutter-py-quarto_ does not include any specific configuration for publishing to PyPI.
 - Test coverage reporting to [codecov](https://codecov.io/). _cookiecutter-py-quarto_ does not include any specific configuration for code coverage reporting, it only includes [pytest-cov](https://github.com/pytest-dev/pytest-cov).
 - Compatibility testing for multiple versions of Python with [tox-uv](https://github.com/tox-dev/tox-uv)
+- Code quality with [deptry](https://github.com/fpgmaas/deptry/) (important rules are covered by ruff and ty).
 
 ---
 

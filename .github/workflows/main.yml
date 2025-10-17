@@ -24,9 +24,6 @@ jobs:
       - name: Run pre-commit
         run: uv run pre-commit run -a --show-diff-on-failure
 
-      - name: Inspect dependencies
-        run: uv run deptry .
-
       - name: Check lock file consistency
         run: uv sync --locked
 

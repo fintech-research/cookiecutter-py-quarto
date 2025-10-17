@@ -45,8 +45,7 @@ check:
     uv run pre-commit run -a
     echo "🚀 Static type checking: Running ty"
     uv run ty check
-    echo "🚀 Checking for obsolete dependencies: Running deptry"
-    uv run deptry src
+
 
 # Test the code with pytest
 test:
