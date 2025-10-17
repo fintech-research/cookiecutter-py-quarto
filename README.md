@@ -67,14 +67,14 @@ On your local machine, navigate to the directory in which you want to
 create a project directory, and run the following command:
 
 ```bash
-uvx cookiecutter https://github.com/fintech-research/cookiecutter-py-quarto.git
+uvx cookiecutter gh:fintech-research/cookiecutter-py-quarto
 ```
 
 or if you don't have [`uv`](https://docs.astral.sh/uv/) installed yet (you should really consider installing it):
 
 ```bash
 pip install cookiecutter
-cookiecutter https://github.com/fintech-research/cookiecutter-py-quarto.git
+cookiecutter cookiecutter gh:fintech-research/cookiecutter-py-quarto
 ```
 
 Follow the prompts to configure your project. Once completed, a new directory containing your project will be created. Then navigate into your newly created project directory and follow the instructions in the `README.md` to complete the setup of your project.
@@ -95,7 +95,7 @@ repository, which in turn is partially based on [Audrey Feldroy's](https://githu
 ├── .github/
 ├── .gitignore
 ├── .python-version
-├── config
+├── conf
 │   └── config.yaml
 ├── docs/
 ├── justfile
