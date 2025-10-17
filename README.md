@@ -10,6 +10,26 @@
 
 This is a modern Cookiecutter template that can be used to initiate a research project that uses Python and Quarto.
 
+## Quickstart
+
+On your local machine, navigate to the directory in which you want to
+create a project directory, and run the following command:
+
+```bash
+uvx cookiecutter gh:fintech-research/cookiecutter-py-quarto
+```
+
+or if you don't have [`uv`](https://docs.astral.sh/uv/) installed yet (you should really consider installing it):
+
+```bash
+pip install cookiecutter
+cookiecutter cookiecutter gh:fintech-research/cookiecutter-py-quarto
+```
+
+Follow the prompts to configure your project. Once completed, a new directory containing your project will be created. Then navigate into your newly created project directory and follow the instructions in the `README.md` to complete the setup of your project.
+
+## Overview
+
 Cookiecutter template for research projects that use Python and Quarto. This template is _very_ opinionated, and is meant to be a good starting point for empirical research projects in Python with companion papers and presentations written in Quarto. It tailored for our research group's workflow; feel free to use it as is, or fork it and adapt it to your own needs.
 
 Python project with all the necessary tools for development, testing, and deployment. It supports the following features:
@@ -55,30 +75,6 @@ Features in `cookiecutter-uv` that are not in `cookiecutter-py-quarto`:
 - Code quality with [deptry](https://github.com/fpgmaas/deptry/) (important rules are covered by ruff and ty).
 
 ---
-
-<p align="center">
-  <a href="https://fpgmaas.github.io/cookiecutter-py-quarto/">Documentation</a> - <a href="https://github.com/fintech-research/cookiecutter-py-quarto-example">Example</a>
-</p>
-
----
-
-## Quickstart
-
-On your local machine, navigate to the directory in which you want to
-create a project directory, and run the following command:
-
-```bash
-uvx cookiecutter gh:fintech-research/cookiecutter-py-quarto
-```
-
-or if you don't have [`uv`](https://docs.astral.sh/uv/) installed yet (you should really consider installing it):
-
-```bash
-pip install cookiecutter
-cookiecutter cookiecutter gh:fintech-research/cookiecutter-py-quarto
-```
-
-Follow the prompts to configure your project. Once completed, a new directory containing your project will be created. Then navigate into your newly created project directory and follow the instructions in the `README.md` to complete the setup of your project.
 
 ## Acknowledgements
 
