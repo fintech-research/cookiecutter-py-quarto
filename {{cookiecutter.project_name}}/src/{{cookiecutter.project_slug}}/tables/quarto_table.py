@@ -28,7 +28,7 @@ class QuartoDisplayTable:
             ImportError: If pandas is not installed.
         """
         try:
-            import pandas as pd  # Import pandas only if needed
+            import pandas as pd  # ty: ignore[unresolved-import]
         except ImportError as e:
             e.msg = "pandas is required to use QuartoDisplayTable."
             raise

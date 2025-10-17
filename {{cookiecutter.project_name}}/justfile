@@ -4,7 +4,7 @@ results_dir := env('RESULTS_DIR', 'results')
 
 # Show available recipes and their short descriptions
 help:
-    just --summary
+    just --list
 
 # Install the virtual environment and install the pre-commit hooks
 install:
