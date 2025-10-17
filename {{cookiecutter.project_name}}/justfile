@@ -15,7 +15,7 @@ install:
     @echo "🚀 Installing git pre-commit hooks"
     uv run pre-commit install
     @echo "🚀 Creating local .env file"
-    cp .env-example .env
+    cp .env-sample .env
     @echo "Done. ‼️ Edit the .env file to set your environment variables. ‼️"
 
 {% raw %}
