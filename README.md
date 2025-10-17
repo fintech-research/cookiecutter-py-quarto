@@ -10,6 +10,26 @@
 
 This is a modern Cookiecutter template that can be used to initiate a research project that uses Python and Quarto.
 
+## Quickstart
+
+On your local machine, navigate to the directory in which you want to
+create a project directory, and run the following command:
+
+```bash
+uvx cookiecutter gh:fintech-research/cookiecutter-py-quarto
+```
+
+or if you don't have [`uv`](https://docs.astral.sh/uv/) installed yet (you should really consider installing it):
+
+```bash
+pip install cookiecutter
+cookiecutter cookiecutter gh:fintech-research/cookiecutter-py-quarto
+```
+
+Follow the prompts to configure your project. Once completed, a new directory containing your project will be created. Then navigate into your newly created project directory and follow the instructions in the `README.md` to complete the setup of your project.
+
+## Overview
+
 Cookiecutter template for research projects that use Python and Quarto. This template is _very_ opinionated, and is meant to be a good starting point for empirical research projects in Python with companion papers and presentations written in Quarto. It tailored for our research group's workflow; feel free to use it as is, or fork it and adapt it to your own needs.
 
 Python project with all the necessary tools for development, testing, and deployment. It supports the following features:
@@ -19,7 +39,7 @@ Python project with all the necessary tools for development, testing, and deploy
 - python-dotenv for environment variable management
 - [just](https://github.com/casey/just) task runner
 - Pre-commit hooks with [pre-commit](https://pre-commit.com/)
-- Code quality with [ruff](https://github.com/astral-sh/ruff), [ty](https://docs.astral.sh/ty/) and [deptry](https://github.com/fpgmaas/deptry/).
+- Code quality with [ruff](https://github.com/astral-sh/ruff) and [ty](https://docs.astral.sh/ty/)
 - Testing and coverage with [pytest](https://docs.pytest.org/en/7.1.x/) and [pytest-cov](https://github.com/pytest-dev/pytest-cov)
 - Documentation with [MkDocs](https://www.mkdocs.org/)
 - Containerization with [Docker](https://www.docker.com/) or [Podman](https://podman.io/)
@@ -52,32 +72,9 @@ Features in `cookiecutter-uv` that are not in `cookiecutter-py-quarto`:
 - Publishing to [PyPI](https://pypi.org) by creating a new release on GitHub. _cookiecutter-py-quarto_ does not include any specific configuration for publishing to PyPI.
 - Test coverage reporting to [codecov](https://codecov.io/). _cookiecutter-py-quarto_ does not include any specific configuration for code coverage reporting, it only includes [pytest-cov](https://github.com/pytest-dev/pytest-cov).
 - Compatibility testing for multiple versions of Python with [tox-uv](https://github.com/tox-dev/tox-uv)
+- Code quality with [deptry](https://github.com/fpgmaas/deptry/) (important rules are covered by ruff and ty).
 
 ---
-
-<p align="center">
-  <a href="https://fpgmaas.github.io/cookiecutter-py-quarto/">Documentation</a> - <a href="https://github.com/fintech-research/cookiecutter-py-quarto-example">Example</a>
-</p>
-
----
-
-## Quickstart
-
-On your local machine, navigate to the directory in which you want to
-create a project directory, and run the following command:
-
-```bash
-uvx cookiecutter https://github.com/fintech-research/cookiecutter-py-quarto.git
-```
-
-or if you don't have [`uv`](https://docs.astral.sh/uv/) installed yet (you should really consider installing it):
-
-```bash
-pip install cookiecutter
-cookiecutter https://github.com/fintech-research/cookiecutter-py-quarto.git
-```
-
-Follow the prompts to configure your project. Once completed, a new directory containing your project will be created. Then navigate into your newly created project directory and follow the instructions in the `README.md` to complete the setup of your project.
 
 ## Acknowledgements
 
@@ -95,7 +92,7 @@ repository, which in turn is partially based on [Audrey Feldroy's](https://githu
 ├── .github/
 ├── .gitignore
 ├── .python-version
-├── config
+├── conf
 │   └── config.yaml
 ├── docs/
 ├── justfile
