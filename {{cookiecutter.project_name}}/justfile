@@ -89,6 +89,6 @@ update-deps:
     uv lock --upgrade
 
 # Run the analysis pipeline
-pipeline:
+run-pipeline:
     echo "🚀 Running analysis pipeline"
-    uv run python -m example_project
+    uv run python -m {{cookiecutter.project_slug}}
