@@ -8,6 +8,8 @@
 
 ### 1. Create a New Repository
 
+First, make sure you satifsy the [requirements](#requirements) below.
+
 First, create a repository on GitHub with the same name as this project, and then run the following commands:
 
 ```bash
@@ -26,6 +28,8 @@ You are now ready to start development on your project! Usage instructions below
 
 ### Requirements
 
+The project assumes you have a Unix-like operating system (Linux or macOS). Windows users should consider using the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/) or a [devcontainer](#devcontainer).
+
 The project requires the following software to be installed on your machine:
 
 - [uv](https://docs.astral.sh/uv/): A modern Python environment and package manager.
@@ -40,7 +44,7 @@ If you are using [Homebrew](https://brew.sh/), you can install most of these dep
 brew install uv git just quarto texlive
 ```
 
-### Alternative: Devcontainer
+### Devcontainer
 
 If you are using VSCode, you can also use the provided devcontainer configuration to set up a consistent development environment. This requires the [Remote - Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) and a local installation of [Docker](https://www.docker.com/) or [Podman](https://podman.io/). Note that if you are using Podman, you will need to adjust some settings `devcontainer/devcontainer.json`, see the comments in that file for more details. The container includes all necessary dependencies. Once the container is built and running, you can move on to the "Installation" step below.
 
